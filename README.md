@@ -1,6 +1,6 @@
 ## pm2-node-server
 
-##### Example node-server width pm2.
+##### Example node server with pm2.
 
 ## develop
 
