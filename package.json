@@ -5,10 +5,10 @@
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon src/index.js --exec babel-node",
-    "dev": "npm run dist && pm2 start pm2.dev.config.js",
-    "online": "npm run dist && pm2 start pm2.config.js",
+    "dev": "npm run build && pm2 start pm2.dev.config.js",
+    "online": "npm run build && pm2 start pm2.config.js",
     "stop": "pm2 stop server",
-    "dist": "if [ -d ./dist ]; then rm -rf dist; fi && babel src -d dist",
+    "build": "if [ -d ./dist ]; then rm -rf dist; fi && babel src -d dist",
     "test": "mocha --compilers js:babel-register"
   },
   "husky": {
